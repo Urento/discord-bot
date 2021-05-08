@@ -1,0 +1,25 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Urento/discord-bot.git",
+  "author": "Urento <jan@burzinski.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "eslint": "^7.26.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv-safe": "^8.2.0"
+  }
+}
