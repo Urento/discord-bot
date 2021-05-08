@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:Urento/discord-bot.git",
-  "author": "Urento <jan@burzinski.de>",
+  "author": "Urento",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^15.0.2",
