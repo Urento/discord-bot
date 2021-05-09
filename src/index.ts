@@ -23,6 +23,8 @@ const main = async () => {
 
   client.on("ready", () => console.log("Logged in as " + client.user!.tag));
   client.on("message", async (msg) => {
+    if (msg.author.bot) return;
+    if (!msg.content.startsWith("!")) return;
     if (msg.member?.hasPermission("MANAGE_ROLES")) {
       if (msg.content.includes("!command create")) {
         const split = msg.content.split(" ");
@@ -83,5 +85,4 @@ const main = async () => {
 
   client.login(process.env.DISCORD_TOKEN);
 };
-
 main().catch((err) => console.error(err));
