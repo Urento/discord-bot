@@ -25,6 +25,7 @@
     "@mikro-orm/postgresql": "^4.5.4",
     "discord.js": "^12.5.3",
     "dotenv-safe": "^8.2.0",
-    "pg": "^8.6.0"
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13"
   }
 }

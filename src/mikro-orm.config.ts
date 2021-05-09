@@ -1,5 +1,6 @@
 import { MikroORM } from "@mikro-orm/core";
 import path from "path";
+import { __prod__ } from "./constants";
 import { CommandEntity } from "./entities/command.entity";
 
 require("dotenv-safe").config();
@@ -16,5 +17,5 @@ export default {
   password: process.env.DB_PASSWORD,
   dbName: process.env.DB_NAME,
   type: "postgresql",
-  debug: true,
+  debug: !__prod__,
 } as Parameters<typeof MikroORM.init>[0];
