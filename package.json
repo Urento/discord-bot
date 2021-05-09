@@ -19,7 +19,12 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@mikro-orm/cli": "^4.5.4",
+    "@mikro-orm/core": "^4.5.4",
+    "@mikro-orm/migrations": "^4.5.4",
+    "@mikro-orm/postgresql": "^4.5.4",
     "discord.js": "^12.5.3",
-    "dotenv-safe": "^8.2.0"
+    "dotenv-safe": "^8.2.0",
+    "pg": "^8.6.0"
   }
 }
