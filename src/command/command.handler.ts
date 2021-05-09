@@ -36,6 +36,7 @@ export class CommandHandler {
       response: response,
     });
     this.orm.em.persistAndFlush(newCommand);
+    console.log("Created Command " + command + " for " + serverID);
   }
 
   async delete(id: number) {
